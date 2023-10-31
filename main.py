@@ -4,7 +4,7 @@ def encode(password):
 	encoded_password = ''
 	for i in range(len(password)):
 		# adds 3 to each digit and adds it to the new string
-		if (int(password[i]) <= 6:
+		if (int(password[i])) <= 6:
 			digit = str((int(password[i])) + 3)
 			encoded_password += digit
 		else:

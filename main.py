@@ -56,5 +56,5 @@ def main():
 		elif user_choice == 3:
 			break
 
-
-main()
+if __name__ == '__main__':
+	main()

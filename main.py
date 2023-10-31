@@ -12,7 +12,17 @@ def encode(password):
 
 # decodes the user's encoded password by shifting each number left by 3
 def decode(password):
-	pass
+	result = ""
+
+	for c in password:
+		num = int(c)
+
+		if num < 3:
+			result += str(7 + num)
+		else:
+			result += str(num - 3)
+
+	return result
 
 
 # creates the main function
